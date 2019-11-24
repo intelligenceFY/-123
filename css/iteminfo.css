@@ -1,0 +1,78 @@
+#nav{
+	margin-bottom: 0px;
+}
+#slider-left{
+    margin-top:2px;
+}
+.li-top{
+    margin:20px;
+}
+#cldFrame{
+    height: 240px;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+#cldBody{
+    padding: 10px;
+    width: 200px;
+    color: black;
+}
+#top{
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+#topDate{
+    font-size: 15px;
+}
+.curDate{
+    color: red;
+    font-weight: bold;
+}
+
+#left:hover, #right:hover{
+    background-color: rgba(30, 30, 30, 0.2);
+}
+.date-box{
+    text-align: center;
+    margin-top: 30px;
+}
+@media (min-width:768px) {
+    #slider-left{
+        width:235px;
+        height:600px;
+        position:absolute;
+    }
+   .page_main{
+        margin-left:236px;
+    }
+}
+.page_main{
+    background-color: #ecf0f5;
+    padding: 15px;
+}
+.box-header{
+    padding: 15px;
+}
+.box-form{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    background-color: #ffffff;
+}
+.form-group{
+    padding: 15px;
+}
+.jianjie,.type{
+    text-align: right;
+    line-height: 50px;
+}
+#description-text{
+    height: 60px;
+}
+#reset,#submit{
+    width: 90px;
+    height: 40px;
+}

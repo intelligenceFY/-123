@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>欢迎来到个人设置</title>
+	<link rel="icon" href="../images/icons8_Moderator_16.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../css/introduction.css">
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation" id="nav">
+		<div class="container">
+			<a href="index.html" class="navbar-brand"><strong class="pagename">Management</strong></a>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="introduction.html" >个人中心</a>
+				</li>
+                <li><a href="users.html" >用户管理中心</a>
+                </li>
+				<li><a><span class="glyphicon glyphicon-off"></span>&nbsp;注销</a></li>
+			</ul>
+		</div>
+        <!-- 左侧导航栏 -->
+		<div class="navbar-default collapse navbar-collapse" id="slider-left">
+            <ul class="nav">
+                <li class="li-top">
+                    <a href="index.html" >
+                    	<span class="glyphicon glyphicon-tag"></span>商品详情列表
+                    </a>
+                </li>
+            </ul>
+             <div id="cldFrame">
+                <div id="cldBody">
+                    <table style="table-layout: fixed;margin-left: 3px;letter-spacing: 4px;line-height: 30px">
+                    <thead>
+                        <tr>
+                            <td colspan="7">
+                                <div id="top">
+                                <span id="left">&lt;&lt;</span>
+                                <span id="topDate"></span>
+                                <span  id="right">&gt;&gt;</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="week">
+                            <td>日</td>
+                            <td>一</td>
+                            <td>二</td>
+                            <td>三</td>
+                            <td>四</td>
+                            <td>五</td>
+                            <td>六</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"  style="font-size: 15px;padding: 15px;">
+                    </tbody>
+                </table>
+            </div>
+            <div class="date-box">
+                <h5>当前时间</h5>
+                <b id="Div"></b>
+            </div>
+		</div>
+	</nav>
+		<div class="page_main">
+		<div class="row">
+			<div class="box-header col-md-7 col-sm-12 col-xs-12 col-md-offset-5">
+                <div class="box-title" >
+                     <h3 class="box-title"><span class="glyphicon glyphicon-user"></span> 个人信息</h3>
+                                
+                </div>
+            </div>
+		   <div class="box-form col-md-8 col-sm-12 col-xs-12 col-md-offset-2">
+                <div class="box-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                           <label for="inputName" class="col-sm-2 control-label">用户名</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputName" placeholder="输入用户名">
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputNumber" class="col-sm-2 control-label">个人编号</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputNumber" placeholder="个人编号">
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-sm-2 control-label">邮箱</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputEmail" placeholder="邮箱">
+                                </div>
+                        </div>
+                        <div class="row form-group item-type">
+                            <label class="col-sm-2 control-label">学历</label>
+                            <div class="col-md-10 col-sm-10 col-lg-10">
+                                <select class="form-control">
+                                    <option>本科</option>
+                                    <option>专科</option>
+                                    <option>研究生</option>
+                                    <option>硕士</option>
+                                    <option>高中</option>
+                                </select>
+                            </div>      
+                        </div>
+
+                        <div class="row form-group description">
+                            <label class="col-sm-2 control-label">简介</label>
+                            <div class="col-md-10 col-sm-10 col-lg-10">
+                                <textarea class="form-control" rows="4" id="description-text" placeholder="个人简介"></textarea>
+                            </div>
+                                        
+                        </div>
+                        <div class="form-group">
+                                <button type="reset" class="btn btn-primary col-lg-2 col-sm-2 col-xs-2 col-lg-offset-3 col-sm-offset-3 col-xs-offset-2" id="reset">重置</button>
+                            <button type="submit" class="btn btn-primary col-lg-2  col-sm-2 col-xs-2 col-lg-offset-3 col-sm-offset-3 col-xs-offset-2" id="submit">提交</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+	</div>
+<script type="text/javascript" src="../js/lib/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/pages/time.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>欢迎来到用户中心</title>
+	<link rel="icon" href="../images/icons8_Moderator_16.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../css/users.css">
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation" id="nav">
+		<div class="container">
+			<a href="index.html" class="navbar-brand"><strong class="pagename">Management</strong></a>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="introduction.html" >个人中心</a>
+				</li>
+				<li class="active"><a href="users.html" >用户管理中心</a>
+				</li>
+				<li><a><span class="glyphicon glyphicon-off"></span>&nbsp;注销</a></li>
+			</ul>
+		</div>
+    <div class="navbar-default collapse navbar-collapse" id="slider-left">
+            <ul class="nav">
+                <li class="li-top">
+                    <!--搜索-->
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="search" placeholder="请输入商品名称或ID" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <div id="cldFrame">
+                <div id="cldBody">
+                    <table style="table-layout: fixed;margin-left: 3px;letter-spacing: 4px;line-height: 30px;">
+                    <thead>
+                        <tr>
+                            <td colspan="7">
+                                <div id="top">
+                                <span id="left">&lt;&lt;</span>
+                                <span id="topDate"></span>
+                                <span  id="right">&gt;&gt;</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="week">
+                            <td>日</td>
+                            <td>一</td>
+                            <td>二</td>
+                            <td>三</td>
+                            <td>四</td>
+                            <td>五</td>
+                            <td>六</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"  style="font-size: 15px;padding: 15px;">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+            <div class="date-box">
+                <h5>当前时间</h5>
+                <b id="Div"></b>
+            </div>
+    </div>
+	</nav>
+
+<!-- 主体 -->
+	<div class="page_main">
+		<div class="row">
+
+			<div class="col-md-10 col-md-offset-1">
+  <center><h3><span class="glyphicon glyphicon-list"></span>&nbsp;用户管理中心</h3></center>
+
+				<div class="userContainer"  id="box">
+					  <table id="table" class="table table-responsive table-hover">
+                <thead>
+                  <tr>
+                    <th>编号</th>
+                    <th>用户名</th>
+                    <th> 管理员</th>
+                    <th> 普通用户</th>
+                    <th> 操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <td>1</td>
+                    <td>大智若翼</td>
+                    <td>
+  								      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+								     
+							     </td>
+                   <td>
+                      
+  								      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+								      
+							      </td>
+                    <td>
+                      <button class="btn btn-danger delete" style="font-size: 8px;margin-left: 10px;">删除该用户</button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>2</td>
+                    <td>大智若翼</td>
+                    <td>
+                      
+  								      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+								     
+							        </td>
+                      <td>
+                        
+  								        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+								       
+							        </td>
+                      <td>
+                        <button class="btn btn-danger delete" style="font-size: 8px;margin-left: 10px;" onclick="change()">删除该用户</button>
+                      </td>
+                    </tr>
+
+                    <tr>
+                    <td>2</td>
+                    <td>大智若翼</td>
+                    <td>
+                      
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+                     
+                      </td>
+                      <td>
+                        
+                          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+                       
+                      </td>
+                      <td>
+                        <button class="btn btn-danger delete" style="font-size: 8px;margin-left: 10px;" onclick="change()">删除该用户</button>
+                      </td>
+                    </tr>
+                    <tr>
+                    <td>2</td>
+                    <td>大智若翼</td>
+                    <td>
+                      
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+                     
+                      </td>
+                      <td>
+                        
+                          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+                       
+                      </td>
+                      <td>
+                        <button class="btn btn-danger delete" style="font-size: 8px;margin-left: 10px;" onclick="change()">删除该用户</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>大智若翼</td>
+                      <td>
+                        
+  									      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+									    
+								      </td>
+                      <td>
+                        
+  									      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+									     
+								      </td>
+                      <td>
+                      <button class="btn btn-danger delete" style="font-size: 8px;margin-left: 10px;">删除该用户</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>大智若翼</td>
+                      <td>
+                        
+                          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+                      
+                      </td>
+                      <td>
+                        
+                          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+                       
+                      </td>
+                      <td>
+                      <button class="btn btn-danger delete" style="font-size: 8px;margin-left: 10px;">删除该用户</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>大智若翼</td>
+                      <td>
+                        
+                          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+                      
+                      </td>
+                      <td>
+                        
+                          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 
+                       
+                      </td>
+                      <td>
+                      <button class="btn btn-danger delete" style="font-size: 8px;margin-left: 10px;" onclick="del()">
+                       删除该用户</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="../js/pages/users.js"></script>
+<script type="text/javascript" src="../js/lib/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/pages/time.js"></script>
+</body>
+</html>

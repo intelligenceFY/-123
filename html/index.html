@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0,  user-scalable=no">
+	<title>欢迎来到商品展示</title>
+	<link rel="icon" href="../images/icons8_Moderator_16.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap-table.min.css">
+    <style>
+        .pager {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            border: 1px solid #dddddd;
+            border-radius: 3px;
+            display: inline-block;
+            clear: both;
+        }
+
+        .pager a, .pager span {
+            font-size: 16px;
+            color: #428bca;
+            border-right: 1px solid #dddddd;
+            /*padding: 4px 9px;*/
+            float: left;
+            text-decoration: none;
+            width: 50px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .pager span {
+            color: #fff;
+            background: #428bca;
+        }
+
+        .pager a:hover {
+            color: #2a6496;
+            background: #f2f2f2;
+        }
+
+        .pager a.last {
+            border-right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation" id="nav">
+		<div class="container">
+			<a href="index.html" class="navbar-brand"><strong class="pagename">Management</strong></a>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="introduction.html">个人中心</a>
+				</li>
+                <li><a href="users.html" >用户管理中心</a>
+                </li>
+				<li><a><span class="glyphicon glyphicon-off"></span>&nbsp;注销</a></li>
+			</ul>
+		</div>
+        <!-- 左侧导航栏 -->
+		<div class="navbar-default collapse navbar-collapse" id="slider-left">
+            <ul class="nav">
+                <li class="li-top">
+                    <!--搜索-->
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="search" placeholder="请输入商品名称或ID" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <div id="cldFrame">
+                <div id="cldBody">
+                    <table style="table-layout: fixed;margin-left: 3px;letter-spacing: 4px;line-height: 30px;">
+                    <thead>
+                        <tr>
+                            <td colspan="7">
+                                <div id="top">
+                                <span id="left">&lt;&lt;</span>
+                                <span id="topDate"></span>
+                                <span  id="right">&gt;&gt;</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="week">
+                            <td>日</td>
+                            <td>一</td>
+                            <td>二</td>
+                            <td>三</td>
+                            <td>四</td>
+                            <td>五</td>
+                            <td>六</td>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"  style="font-size: 15px;padding: 15px;">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+            <div class="date-box">
+                <h5>当前时间</h5>
+                <b id="Div"></b>
+            </div>
+		</div>
+	</nav>
+	<!-- 页面主要部分-->
+ 	<div class="page_main">
+        <!-- 销量最高的展示 -->
+ 		<div class="page_header">
+            <div class="row dropdown">
+                <div class="col-md-2">
+                    <h5 style="margin-left: 20px;"><b>销量最高</b></h5>
+                </div>
+                <div class="col-md-2 col-md-offset-8">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        商品分类<span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">水果</a></li>
+                        <li><a href="#">日化</a></li>
+                        <li><a href="#">电器</a></li>
+                        <li><a href="#">生鲜</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page_body1">
+        	<div class="row">
+        		<div class="col-md-3 col-xs-12 col-sm-6">
+        			<div class="item-box1">
+						<div class="item-box-content">
+							<a href="" class="box1"><span class="glyphicon glyphicon-fire" style="color: red;"></span>销量TOP1</a>
+							<h3 class="data fg-lightskyblue">数码</h3>
+                            <b>商品名称&nbsp;&nbsp;</b><span class="glyphicon glyphicon-yen">15.00</span>
+
+						</div>
+					</div>
+        		</div>
+        		<div class="col-md-3 col-xs-12 col-sm-6">
+        			<div class="item-box2">
+						<div class="item-box-content">
+							<a href="" class="box2"><span class="glyphicon glyphicon-fire" style="color: red;"></span> 销量TOP2</a>
+							<h3 class="data fg-lightskyblue">数码</h3>
+                             <b>商品名称&nbsp;&nbsp;</b><span class="glyphicon glyphicon-yen">15.00</span>
+						</div>
+					</div>
+        		</div>
+        		<div class="col-md-3 col-xs-12 col-sm-6">
+        			<div class="item-box3">
+						<div class="item-box-content">
+							<a href="" class="top" class="box1"><span class="glyphicon glyphicon-fire" style="color: red;"></span>销量TOP3</a>
+							<h3 class="data fg-lightskyblue">数码</h3>
+                             <b>商品名称&nbsp;&nbsp;</b><span class="glyphicon glyphicon-yen">15.00</span>
+						</div>
+					</div>
+        		</div>
+        		<div class="col-md-3 col-xs-12 col-sm-6">
+        			<div class="item-box4">
+						<div class="item-box-content">
+							<a href="" class="box4"><span class="glyphicon glyphicon-fire" style="color: red;"></span>销量TOP4</a>
+							<h3 class="data fg-lightskyblue">数码</h3>
+                             <b>商品名称&nbsp;&nbsp;</b><span class="glyphicon glyphicon-yen">15.00</span>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        </div>
+        <!-- 商品展示 -->
+        <div class="page_body2">
+            <div class="row widget">
+                <div class="col-md-12">
+                    <div class="row box-header">
+                        <div class="col-md-4 btn-box"> 
+                            <span class="box-title"><b>商品详情 &nbsp;</b></span>
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            商品排序方式
+                            <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li><a href="#">水果</a></li>
+                                <li><a href="#">日化</a></li>
+                                <li><a href="#">电器</a></li>
+                                <li><a href="#">生鲜</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-1 col-md-offset-7 add-item">
+                            <button class="btn btn-default  pull-right " onclick="additem()"><b>添加商品</b></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 box-body">
+                    <table id="table" class="table table-responsive table-hover">
+                        <thead>
+                            <tr>
+                            <th>ID</th>
+                            <th> 商品名称</th>
+                            <th id="shoujia"> 售价(￥) <span class="glyphicon glyphicon-sort" id="img1"></span></th>
+                            <th id="jinjia"> 进价(￥) <span class="glyphicon glyphicon-sort" id="img2"></span></th>
+                            <th id="xiaoshou"> 销售额(￥) <span class="glyphicon glyphicon-sort" id="img3"></span></th>
+                            <th id="lirun"> 利润(￥) <span class="glyphicon glyphicon-sort" id="img4"></span></th>
+                            <th id="xiaoliang"> 销量 <span class="glyphicon glyphicon-sort" id="img5"></span></th>
+                            <th> 库存</th>
+                            <th> 操作</th>
+                            <th> 时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>1</td>
+                            <td>鼠标</td>
+                            <td>56</td>
+                            <td>10000000</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                            <td><button class="btn btn-primary change" style="font-size: 8px;" onclick="change()">更新</button><button class="btn btn-danger delete" style="font-size: 8px;" onclick="del()">删除</button></td>
+                            <td><span class="time">最近更新时间</span></td>
+                            </tr>
+                             <tr>
+                            <td>1</td>
+                            <td>鼠标</td>
+                            <td>56</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                            <td><button class="btn btn-primary change" style="font-size: 8px;" onclick="change()">更新</button><button class="btn btn-danger delete" style="font-size: 8px;" onclick="change()">删除</button></td>
+                            <td><span class="time">最近更新时间</span></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>键盘</td>
+                                <td>160</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                                <td><button class="btn btn-primary change" style="font-size: 8px;" onclick="change()">更新</button><button class="btn btn-danger delete" style="font-size: 8px;">删除</button></td>
+                                <td><span class="time">最近更新时间</span></td>
+                            </tr>
+                             <tr>
+                                <td>4</td>
+                                <td>音响</td>
+                                <td>256</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                                 <td><button class="btn btn-primary change" style="font-size: 8px;" onclick="change()">更新</button><button class="btn btn-danger delete" style="font-size: 8px;">删除</button></td>
+                                 <td><span class="time">更新时间</span></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>音响</td>
+                                <td>256</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                                <td>1000</td>
+                                 <td><button class="btn btn-primary change" style="font-size: 8px;" onclick="change()">更新</button><button class="btn btn-danger delete" style="font-size: 8px;">删除</button></td>
+                                 <td><span class="time">更新时间</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- 分页 -->
+                    <div style="text-align:center">
+                        <div class="pager"></div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="../js/lib/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="../js/pages/index.js"></script>
+<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/pages/time.js"></script>
+
+<script>
+    //生成Pager，当前页码, 总页数, 回调function
+    $.fn.pager = function (page, total, callback) {
+        var html = '';
+        var start;
+        var end;
+        html += '<a class="first" style="width: 100px" href="javascript:;">首页</a>';
+        html += '<a class="first" style="width: 100px"href="javascript:;">上一页</a>';
+        if (total <= 5) {
+            start = 0;
+            end = total;
+        } else {
+            if (page > total - 2) {
+                start = total - 5;
+            } else {
+
+                start = page - 3 < 0 ? 0 : page - 3;
+
+            }
+            if (page < 3) {
+                if (total >= 5) {
+                    end = 5;
+                } else {
+                    end = total;
+                }
+            } else {
+                end = page + 2 < total ? page + 2 : total;
+            }
+        }
+
+
+        for (var i = start; i < end; i++) {
+            html += i == page - 1 ? '<span>' + (i + 1) + '</span>' : '<a href="javascript:;">' + (i + 1) + '</a>';
+        }
+        html += '<a class="first" style="width: 100px" href="javascript:;">下一页</a>';
+        html += '<a class="last"style="width: 100px" href="javascript:;">末页</a>';
+        $(this).html(html).find('a').click(function () {
+            var p = $(this).text();
+            if (p == '上一页') p = page == 1 ? 1 : page - 1;
+            if (p == '下一页') p = page == total ? total : page + 1;
+            if (p == '首页') p = 1;
+            if (p == '末页') p = total;
+
+            if (p != page) callback(parseInt(p));
+        });
+    }
+
+    onload = function () {
+        var pageTotal =553;//总页数
+
+        //调用回调
+        function go(p) {
+            $('.pager').pager(p, pageTotal, go);
+        }
+
+        $('.pager').pager(1, pageTotal, go);
+    };
+</script>
+</body>
+</html>

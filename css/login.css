@@ -1,0 +1,18 @@
+body{
+	background: url(../images/u=732608106,2566824900&fm=26&gp=0.jpg) bottom center no-repeat fixed;
+	background-size: 100% 100%;
+}
+.name{
+	color: #fff;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+.pagename{
+	font-size: 1.8em;
+}
+.container-login{
+	color: #fff;
+	max-width: 400px;
+  	border:1px solid #aaa;
+  		box-shadow:0px 0px  1px 1px #aaa;
+}

@@ -1,0 +1,11 @@
+#popupdiv
+{
+width:500px;
+height:450px;
+position:absolute;
+z-index:1000;
+border:1px solid block;
+box-shadow: 2px 2px #666;
+background:#fff;
+text-align: center;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>注册</title>
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+	<link rel="icon" href="../images/icons8_Moderator_16.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container name">
+		<div class="row pagename">
+			<center>
+				购物网站后台管理系统
+			</center>
+			
+		</div>
+	</div>
+	<div class="container container-register">
+		<h2>注册
+			<small><a href="login.html">登录</a></small>
+		</h2>
+		<form>
+			<div class="form-group login">
+				<label for="username">用户名</label>
+				<input type="text" class="form-control username">
+				<span  style="color: red;font-size: 10px;">用户名已存在,请重新输入</span>
+			</div>
+
+			<div class="form-group">
+				<label for="password">密码</label>
+				<input type="password" class="form-control password">
+			</div>
+			<div class="form-group">
+				<label for="password">确认密码</label>
+				<input type="password" class="form-control password">
+				<span  style="color: red;font-size: 10px;">两次输入密码不一致</span>
+			</div>
+			<div class="form-group">
+				<button type="reset" class="btn btn-primary col-lg-1 col-lg-offset-2 col-sm-1 col-sm-offset-3 col-xm-1 col-xm-offset-3" id="reset">重置</button>
+				<button type="submit" class="btn btn-primary col-lg-1 col-lg-offset-3 col-sm-1 col-sm-offset-3 col-xm-1 col-xm-offset-3" id="submit">注册</button>
+			</div>	
+		</form>
+	</div>
+	<script type="text/javascript" src="../js/lib/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
